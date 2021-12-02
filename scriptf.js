@@ -48,3 +48,51 @@ function verificar(){ //carregar pra funcionar na maquina
         alert('Fotos até 2021')
     }
 }
+function contar(){
+    var ini = document.getElementById('txti')
+    var fim = document.getElementById('txtf')
+    var pas = document.getElementById('txtp')
+    var res = document.getElementById('res')
+    var i = Number(ini.value)
+    var f = Number(fim.value)
+    var p = Number(pas.value)
+    if(ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0 ) {
+        alert('ERRO, Faltam dados')
+    } else {
+        res.innerHTML = 'Contando: <br>' 
+        if (p <= 0){
+            alert('Considerando 0 = 1')
+            p = 1
+        }
+    if( i < f) {
+        //contagem crescente
+           for( var c = i; c <= f; c += p){    
+        }
+        res.innerHTML += 'Fim.'
+    }else{
+        //contagem decrescente
+            for (var c = i; c >= f; c -= p){
+                res.innerHTML += `${c} `
+            }   
+        }
+        res.innerHTML += `Fim.`
+    }
+}
+function tabuada(){
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    if (num.value.length == 0){
+         alert('digite um número')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while ( c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}` 
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
+    }
+}
