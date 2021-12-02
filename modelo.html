@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de Ecercicos</title>
+</head>
+<body>
+    <header>
+         <h1>Exercícios de JavaScript</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="contar">Contador</li>
+            <li id="fotor">Fotos</li>
+            <li id="tabuadar">Tabuada</li>
+        </ul>
+    </nav>
+    <section id="contador">
+        <h2>Contador</h2>
+        <div id="dados">
+            <p>Ínicio <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number"name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+
+    </section>
+
+    <section id="tabuada">
+       <h2>Tabuada</h2>
+       <div>
+           <p>Número
+               <input type="number" name="num" id="txtn">
+               <input type="button" value="Gerar" onclick="tabuada()"> 
+           </p>
+       </div>
+       <div>
+           <select name="tabuada" id="seltab" size="10"></select>
+       </div>
+
+   </section>
+
+   <section id="fotos">
+       <h2>Fotos Renan</h2>
+    <div>
+        <p>Escolha um ano: (2012 - 2021)</p>
+        <div id="tano1"><input  id="tano" type="number" name="tano" id="tano" min="0"></div>
+    </div>
+
+    <div id="botao1">
+        <input id="butao" type="button" value="carregar" onclick="verificar()">
+    </div>
+
+</div>
+
+<div class="divfoto"><img id="foto" width="300px" src="" ></div>
+<div id="tfoto"> <p id="des"></p> </div>
+
+</section>
+    <footer> <a href="https://xavierrlx.github.io/renanxavier/index" target = '_blank'>@Renan Xavier</a></footer>
+    <script src="scriptc.js"></script>
+    <script src="scriptt.js"></script>
+    <script src="scriptf.js"></script>
+
+    <script>
+        var con = document.getElementById('contar')
+        var tab = document.getElementById('tabuadar')
+        var fot = document.getElementById('fotor')
+        var conn = document.getElementById('contador')
+        var tabb = document.getElementById('tabuada')
+        var fott = document.getElementById('fotos')
+        con.addEventListener('click', clitar)
+        tab.addEventListener('click', clidar)
+        fot.addEventListener('click', clitor)
+        corpo.addEventListener('click', clipor)
+
+        function clitar(){
+            tabb.style.display = 'none'
+            conn.style.display = 'block'
+            fott.style.display = 'none'
+            con.style.backgroundColor = 'red'
+            tab.style.backgroundColor = 'black'
+            fot.style.backgroundColor = 'black'
+        }
+        function clidar(){
+            tabb.style.display = 'block'
+            conn.style.display = 'none'
+            fott.style.display = 'none'
+            tab.style.backgroundColor = 'red'
+            fot.style.backgroundColor = 'black'
+            con.style.backgroundColor = 'black'
+
+        }
+        function clitor(){
+            tabb.style.display = 'none'
+            conn.style.display = 'none'
+            fott.style.display = 'block'
+            fot.style.backgroundColor = 'red'
+            tab.style.backgroundColor = 'black'
+            con.style.backgroundColor = 'black'
+        }
+    </script>
+       
+    
+</body>
+</html>
