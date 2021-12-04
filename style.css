@@ -46,6 +46,9 @@ h2{
     transition: 0.2s;
     box-shadow:  0px 0px 5px black;
 }
+#exercicios > ul > li:hover{
+    background-color: #f32121;
+}
 .botao{
     background-color: white;
  
@@ -84,6 +87,7 @@ a{
 .butao:hover{
     background-color: red;
     color: black;
+    box-shadow:  0px 0px 5px black;
 }
 img{
     border-radius: 10px;
