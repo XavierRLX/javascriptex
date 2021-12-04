@@ -48,36 +48,39 @@ function verificar(){ //carregar pra funcionar na maquina
         alert('Fotos até 2021')
     }
 }
+
 function contar(){
-    var ini = document.getElementById('txti')
-    var fim = document.getElementById('txtf')
-    var pas = document.getElementById('txtp')
-    var res = document.getElementById('res')
-    var i = Number(ini.value)
-    var f = Number(fim.value)
-    var p = Number(pas.value)
-    if(ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0 ) {
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
+    let res = document.getElementById('res')
+
+    if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ) {
         alert('ERRO, Faltam dados')
     } else {
         res.innerHTML = 'Contando: <br>' 
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
         if (p <= 0){
             alert('Considerando 0 = 1')
             p = 1
         }
     if( i < f) {
         //contagem crescente
-           for( var c = i; c <= f; c += p){    
+           for( let c = i; c <= f; c += p){ 
+            res.innerHTML += `${c} `   
         }
-        res.innerHTML += 'Fim.'
     }else{
         //contagem decrescente
-            for (var c = i; c >= f; c -= p){
+            for (let c = i; c >= f; c -= p){
                 res.innerHTML += `${c} `
             }   
         }
         res.innerHTML += `Fim.`
     }
 }
+
 function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
@@ -87,7 +90,7 @@ function tabuada(){
         let n = Number(num.value)
         let c = 1
         tab.innerHTML = ''
-        while ( c <= 10) {
+        while ( c <= 100) {
             let item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}` 
             item.value = `tab${c}`

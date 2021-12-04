@@ -16,19 +16,28 @@ header{
 h2{
     text-align: center;
 }
-nav{
+#texto{
+    background-color: white;
+    box-shadow:  0px 0px 5px black;
+    width: 200px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#exercicios{
     display: flex;
     width: 200px;
     margin: auto;
     margin-top: 10px;
 }
-nav > ul{
+#exercicios > ul{
     display: flex;
     margin: 0px;
     list-style: none;
     cursor: pointer;
 }
-nav > ul > li{
+#exercicios > ul > li{
     margin: 5px;
     background-color: black;
     padding: 5px;
@@ -57,9 +66,25 @@ input{
     margin: 5px;
 }
 footer{
+    margin-top: 100px;
     text-align: center;
 
 }
 a{
     color: black;
+}
+.butao{
+    border-style: none;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.butao:hover{
+    background-color: red;
+    color: black;
+}
+img{
+    border-radius: 10px;
 }
