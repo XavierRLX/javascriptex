@@ -7,7 +7,7 @@ function verificar(){ //carregar pra funcionar na maquina
 //  var ano = data.getFullYear()
 //  var ano =                         //forçar na maquina
     if (ano == 0){
-        alert('Digite um número')
+        alert('Selecione um número')
     }
     if (ano < 2000){
         img.src = 'foto00.jpg'
@@ -22,13 +22,13 @@ function verificar(){ //carregar pra funcionar na maquina
         descr.innerHTML = ` Passeio da escola para Petropolis - Rj`
     } else if ( ano === 2014) {
         img.src = 'foto2014.jpg'
-        descr.innerHTML = `Tirada no banheiro da antiga casa`
+        descr.innerHTML = `Tirada no banheiro`
     }else if ( ano === 2015) {
         img.src = 'foto2015.jpg'
-        descr.innerHTML = `Tirada na sala de casa antiga com a blusa do flamengo`
+        descr.innerHTML = `Com a blusa do flamengo`
     }else if ( ano === 2016) {
         img.src = 'foto2016.jpg'
-        descr.innerHTML = `Tirada no meu antigo quarto da casa passada`
+        descr.innerHTML = `Tirada no meu antigo, deixando o cabelo crescer`
     }else if ( ano === 2017) {
         img.src = 'foto2017.jpg'
         descr.innerHTML = `Foto registrada em Nilopolis no desfile da banda da escola`
@@ -44,6 +44,8 @@ function verificar(){ //carregar pra funcionar na maquina
     }else if ( ano === 2021) {
         img.src = 'foto2021.jpg'
         descr.innerHTML = `Campos do Jordão - Sp`
+    } else if ( ano === 2022 ) {
+        descr.innerHTML = 'Ainda não tirada'
     }else {
         alert('Fotos até 2021')
     }
