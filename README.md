@@ -1,2 +1,2 @@
-# javascriptex
- exercicios
+# JavaScript
+Um pouco dos exercícios aprendido em JavaScript.
